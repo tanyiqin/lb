@@ -1,4 +1,4 @@
-module loadbalance
+module github.com/tanyiqin/lb
 
 go 1.15
 
