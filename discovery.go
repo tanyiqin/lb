@@ -57,6 +57,10 @@ func (s *ServiceDiscovery) Get(key string) string {
 	return s.serviceList[key]
 }
 
+func (s *ServiceDiscovery) ServerList() map[string]string{
+	return s.serviceList
+}
+
 func (s *ServiceDiscovery) Del(key string) {
 	s.mutex.Lock()
 	defer s.mutex.Unlock()
